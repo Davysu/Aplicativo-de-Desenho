@@ -67,11 +67,41 @@ section{
 #fill-color:checked ~ label{
   color: var(--cor-principal);
 }
+
+#size-slider {
+  width: 100%; /* Define a largura do slider */
+  height: 10px; /* Define a altura do slider */
+  -webkit-appearance: none; /* Remove a aparência padrão do navegador (apenas para navegadores WebKit como Chrome e Safari) */
+  appearance: none; /* Remove a aparência padrão do navegador */
+  background: #ddd; /* Define a cor de fundo do slider */
+  outline: none; /* Remove a borda ao redor do slider quando estiver focado */
+}
+
+#size-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove a aparência padrão do polegar do slider no WebKit */
+  appearance: none; /* Remove a aparência padrão do polegar do slider */
+  width: 20px; /* Define a largura do polegar do slider */
+  height: 20px; /* Define a altura do polegar do slider */
+  background: var(--cor-principal); /* Define a cor de fundo do polegar do slider */
+  cursor: pointer; /* Define o cursor como apontador para o polegar do slider */
+  border-radius: 50%; /* Define a borda do polegar do slider como arredondada */
+}
+
+#size-slider::-moz-range-thumb {
+  width: 20px; /* Define a largura do polegar do slider para navegadores Firefox */
+  height: 20px; /* Define a altura do polegar do slider para navegadores Firefox */
+  background: var(--cor-principal); /* Define a cor de fundo do polegar do slider para navegadores Firefox */
+  cursor: pointer; /* Define o cursor como apontador para o polegar do slider para navegadores Firefox */
+  border-radius: 50%; /* Define a borda do polegar do slider como arredondada para navegadores Firefox */
+}
+
+
 .option #size-slider{
   width: 100%;
   height: 5px;
   margin-top: 10px;
 }
+
 .colors .options{
   display: flex;
   justify-content: space-between;
